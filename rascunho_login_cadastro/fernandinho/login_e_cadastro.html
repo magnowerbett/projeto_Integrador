@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+   <header>
+    <h1>Login e Cadastro</h1>
+   </header>
+   <main>
+    
+    <section class="login">
+        <h2>Login</h2>
+        <form action="#" method="post" onsubmit="return validateLogin()">
+            <input type="email" name="email" id="loginEmail" placeholder="E-mail">
+            <input type="password" name="password" id="loginPassword" placeholder="Senha">
+            <button class="botao1" type="submit">Entrar</button>
+        </form>
+        <span id="loginErrorMessage"></span>
+    </section>
+    
+    <section class="cadastro">
+        <h2>Cadastro</h2>
+        <form action="#" method="post" onsubmit="return validateCadastro()">
+            <input type="text" name="name" id="cadastroName" placeholder="Nome">
+            <input type="email" name="email" id="cadastroEmail" placeholder="E-mail">
+            <input type="password" name="password" id="cadastroPassword" placeholder="Senha">
+            <input type="password" name="repeat_password" id="repeatPassword" placeholder="Repetir senha">
+            <button class="botao2" type="submit">Cadastrar</button>
+        </form>
+        <span id="cadastroErrorMessage"></span>
+    </section>
+   </main> 
+   
+</body>
+</html>
