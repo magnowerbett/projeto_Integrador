@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para restaurar o conteúdo original
     function restaurarConteudoOriginal() {
         var containerResultados = document.querySelector('#resultado-pesquisa');
-        autoresContainer.style.display = 'block';
+        autoresContainer.style.display = 'flex';
         containerResultados.innerHTML = '';
 
         autoresContainer.innerHTML = '';
