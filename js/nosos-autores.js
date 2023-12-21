@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const autoresContainer = document.getElementById('autores-container');
 
-    // Dados dos autores
+    // Dados dos autores###array=>
     const autores = [
         {
             nome: "Jarbas Martins",
