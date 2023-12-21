@@ -1,6 +1,6 @@
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchInput = document.querySelector('.form-control');
+           document.addEventListener('DOMContentLoaded', function () {
+ const searchInput = document.querySelector('.form-control');
         const searchButton = document.querySelector('.btn-outline-light');
         const cardsContainer = document.querySelector('.row'); // Substitua por um seletor mais específico se necessário
 
@@ -20,8 +20,8 @@
         }
 
         // Evento de clique para o botão de busca
-        searchButton.addEventListener('click', function(event) {
-            event.preventDefault();
+        searchButton.addEventListener('click', function(e) {
+            e.preventDefault();
             filterCards();
         });
 

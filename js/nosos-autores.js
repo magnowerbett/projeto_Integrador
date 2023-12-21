@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var card = document.createElement('div');
         card.className = 'card mb-3';
         card.innerHTML = `<img src="${autor.imagem}" alt="Imagem de ${autor.nome}">
-                          <h5 class='card-title'>${autor.nome}</h5>
+                          <h5 class='crad-title'>${autor.nome}</h5>
                           <p class='card-text'>${autor.descricao}</p>
                           <p class='card-text'>Preço: ${autor.preco}</p>`;
         return card;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para restaurar o conteúdo original
     function restaurarConteudoOriginal() {
         var containerResultados = document.querySelector('#resultado-pesquisa');
-        autoresContainer.style.display = 'flex';
+        autoresContainer.style.display = '';
         containerResultados.innerHTML = '';
 
         autoresContainer.innerHTML = '';
