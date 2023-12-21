@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Evento de clique do botão de pesquisa
     document.querySelector('.btn-outline-light').addEventListener('click', function(event) {
-        event.preventDefault(); // Impede o comportamento padrão do formulário
+        event.preventDefault();
         realizarPesquisa();
     });
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var containerResultados = document.querySelector('#resultado-pesquisa');
 
         autoresContainer.style.display = 'none';
-        containerResultados.innerHTML = '';
+        containerResultados.innerHTML = 'Nenhum resultado encontrado';
 
         autores.forEach(autor => {
             if (autor.nome.toLowerCase().includes(termoPesquisa)) {
